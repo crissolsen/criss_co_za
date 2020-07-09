@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-container {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    background: lightblue;
+    resize: both;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  #contact-click {display: none;}
+  #contact-click-small {
+    display: block !important;
+    position: absolute;
+    height: auto;
+    width: auto;
+    text-align: justify;
+    padding-top: 5%;
+    padding-left: 70%;
+  }
+
+  .grid-item {
+      padding-bottom: 5%;
+  }
+}
+
+#contact-click-small {
+    display: none;
+}
+
+#contact-click {
+    position: absolute;
+    height: auto;
+    width: auto;
+    text-align: justify;
+    padding-left: 60%;
+    padding-top: 2%;
+}
+
+span {
+    background: #F7E4B7;
+    border-radius: 10px;
+    text-emphasis: filled; 
+    padding: 5px;
+    color: black;
+    font-size: 0.9em;
+    box-shadow: 2px 2px 2px 2px #DECAA2;
+    text-shadow: 0 0 2px white;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: row;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item {
+    background: white;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+}
+
+.grid-item:nth-child(even) {
+    background: lightblue;
+    text-align: right;
+}
+.buttonCustom {
+    background: #F7E4B7;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-size: 0.9em;
+    box-shadow: 2px 2px 2px 2px #DECAA2;
+    text-shadow: 0 0 2px white;
+}
+
+#navbar {
+    width: 100%;
+    height: 5vh;
+}
+
+#navbar-back {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: white;
+}
+
+#title {
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+    animation-name: slow-fade;
+}
+
+.no-space {
+    padding: 0;
+    margin: 0;
+    font-size: smaller;
+    cursor: grab;
+}
+
+.no-space:nth-child(2) {
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    margin-bottom: -4px;
+}
+
+.hide {
+    display: none;
+}
