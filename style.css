@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'B612', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
@@ -15,7 +15,7 @@ a {
     place-items: center;
     height: 100%;
     width: 100%;
-    background: lightblue;
+    background: #FFFD80;
     resize: both;
     overflow: auto;
 }
@@ -28,11 +28,13 @@ a {
     height: auto;
     width: auto;
     text-align: justify;
+    padding: 10px;
     padding-top: 5%;
     padding-left: 70%;
+    font-size: 0.7em;
   }
 
-  .grid-item {
+    .grid-item {
       padding-bottom: 5%;
   }
 }
@@ -51,14 +53,12 @@ a {
 }
 
 span {
-    background: #F7E4B7;
-    border-radius: 10px;
-    text-emphasis: filled; 
-    padding: 5px;
-    color: black;
+    background: #FFFD80;
+    border-radius: 20px;
+    padding: 1em;
+    color: white;
     font-size: 0.9em;
-    box-shadow: 2px 2px 2px 2px #DECAA2;
-    text-shadow: 0 0 2px white;
+    box-shadow: 1px 2px 5px 5px #d6d56d;
 }
 
 
@@ -77,18 +77,24 @@ span {
 }
 
 .grid-item:nth-child(even) {
-    background: lightblue;
+    background: #6CD1AB;
     text-align: right;
 }
+
+
+.grid-item h3 {
+    font-family: "Arvo", Arial, sans-serif;
+}
+
 .buttonCustom {
-    background: #F7E4B7;
+    background: #FFFD80;
     border-radius: 10px;
     text-decoration: none;
     padding: 5px;
     color: black;
     font-size: 0.9em;
-    box-shadow: 2px 2px 2px 2px #DECAA2;
-    text-shadow: 0 0 2px white;
+    box-shadow: 2px 2px 2px 2px #d6d56d;
+    
 }
 
 #navbar {
@@ -106,7 +112,6 @@ span {
 #title {
     margin-bottom: 0.1em;
     margin-top: 0.1em;
-    animation-name: slow-fade;
 }
 
 .no-space {
